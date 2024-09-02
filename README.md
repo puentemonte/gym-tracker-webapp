@@ -12,7 +12,7 @@
 
 * Delete existing exercises
 
-* Add new [training days](####Training Day)
+* Add new [training days](####Training-Day)
 
 * Modify existing training day
 
@@ -21,6 +21,33 @@
 * Daily view of exercises
 
 * Monthly view of training days
+
+
+#### Exercises
+
+* Basic piece of info. 
+
+* Contains: title, series, reps/series, comment.
+
+```
+title: text
+series,reps/series: array of tuples of int,int
+comment:text
+```
+
+#### Training Day
+
+* Container of exercises. 
+
+* Restrictions: Can be empty on creation. Cannot be empty on save.
+
+* Contains: title, exercises, comment.
+
+```
+title: date
+exercises: array of exercises
+comment:text
+```
 
 ## Why do I need this?
 
